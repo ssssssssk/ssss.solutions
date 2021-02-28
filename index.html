@@ -1,124 +1,101 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-  <head>
-    <style>
-      .marquee {
-      position: relative;
-      overflow: hidden;
-      --offset: 20vw;
-      --move-initial: calc(-25% + var(--offset));
-      --move-final: calc(-50% + var(--offset));
-      }
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>SSSS.SOLUTIONS</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-      .marquee__inner {
-      width: fit-content;
-      display: flex;
-      position: relative;
-      transform: translate3d(var(--move-initial), 0, 0);
-      animation: marquee 5s linear infinite;
-      animation-play-state: running;
-      }
+  <!-- Mobile Specific Metas
+       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      .marquee span {
-      font-size: 3rem;
-      padding: 0 2rem;
+  <!-- FONT
+       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,800;0,900;1,400;1,800&display=swap" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/images.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <div class="scroll-container">
+  <div class="row" width="100%" margin="0">
+    <!-- <div class="bg"></div> -->
+ <div class="crossfade">
+  <figure></figure>
+  <figure></figure>
+  <figure></figure>
+  <figure></figure>
+  <figure></figure>
+
+ </div>
+  </div>
+  <div class="row">
+    <div class="twelve-columns">
+      <div class="top">
+	<div class="marquee">
+	  <div class="marquee__inner" aria-hidden="true">
+	    <span style="color: light grey;">
+	      <h1>sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</h1></span>
+	  </div>
+	</div>
+      </div>
+       <div class="snake">
+	 <h1>&nbsp;&#128013;</h1> 
+
+       </div>
+    </div>
+   
+  </div>
+  <div class="row" height="100vh">
+    <div>
+      <div class="one-half-column" style="position: relative;">
+	<h1 style="margin-bottom: 0;"><span style="color: #FAC863; ">ssss solutions:</span></h1>
+	
+      </div>
+      <div style="position: absolute; right: 0; bottom: 0;">
+	<h2><span style="color: #5FB3B3;">A friendly, animal-focused ad agency.</span></h2>
+      </div>
       
-      }
-      .top {
-      position: fixed;
-      <!-- top: 0px; -->
-      left: 0px;
-      border: 0;
-      }
-
-      .snake {
-      position: fixed;
-      right: 0px;
-      border:0;
-      background: white;
-
-      }
-      .bottom {
-      position: fixed;
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
-      border: 0;
-      transform: rotate(180deg);
-      }
-      .left {
-      position: fixed;
-      top: 0px;
-      left: 0px;
-      bottom: 0px; 
-      border: 0;
-      transform: rotate(90deg);
-      padding-right: 0px;
-      }
-      .right {
-      position: fixed;
-      top: 0px;
-      right: 0px;
-      top: 0px; 
-      border: 0;
-      transform: rotate(270deg);
-      padding-right: 0px;
-      }
-
-     /* .marquee:hover .marquee__inner {
-	animation-play-state: running;
-	} */
-
-     @keyframes marquee {
-       0% {
-         transform: translate3d(var(--move-initial), 0, 0);
-       }
-
-       100% {
-         transform: translate3d(var(--move-final), 0, 0);
-       }
-     }
-     body {
-       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-       font-size: 3rem;}
-     p {
-font-size: 2rem;
-     }
-     
-    </style>
-  </head>
-  <body>
-    <!-- <div class="right">
-	 <div class="marquee">
-	 <div class="marquee__inner" aria-hidden="true">
-	 <span>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</span>
-	 </div>
-	 </div>
-	 </div> -->
+    </div>
+  </div>
+  
+  
     
-    <div class="top">
-      <div class="marquee">
-	<div class="marquee__inner" aria-hidden="true">
-	  <span style="color: light grey;">sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</span>
+ 
+  <div>
+    <div class="container" height="100vh" style="position: relative; bottom: -105vh;">
+      <div class="row">
+	<div class="one-half column">
+	  <h1>SSSS.solutions</h1>
+	  <p>We are an ad agancy focused on animal welfare and pet-focused non-profits.</p>
 	</div>
       </div>
     </div>
-    <div class="snake">
-      &nbsp;&#128013; 
-    </div>
-    &nbsp;
-    
-  <div>
-   
-    ssss.solutions:
-    <br>
-
   </div>
-  <p>
-    We make ads.<br>
-    Snakes are cool!
-  </p>
+  </div>
 
-   
-  </body>
+
+  <!-- End Document
+       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
 </html>
+<!-- Some scrolling ideas: https://24ways.org/2019/beautiful-scrolling-experiences-without-libraries/
+Also considering making a special cursor.-->

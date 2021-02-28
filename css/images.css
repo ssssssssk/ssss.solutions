@@ -1,0 +1,74 @@
+.bg
+{
+  background-image: url("/Users/steve/2021/Work/011-SSSS-website/html/images/01-GS.jpg");
+  height: 100%;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* crossfade style */
+/* from: https://www.cssscript.com/css-only-crossfading-background-slideshow/ */
+
+.crossfade > figure {
+  animation: imageAnimation 25s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  color: transparent;
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+  margin: 0;
+}
+
+/* Add images to the slide show */
+
+.crossfade > figure:nth-child(1) { background-image: url('/Users/steve/2021/Work/011-SSSS-website/html/images/01-GS.jpg'); }
+
+.crossfade > figure:nth-child(2) {
+  animation-delay: 5s;
+  background-image: url('/Users/steve/2021/Work/011-SSSS-website/html/images/02-GS.jpg');
+}
+
+.crossfade > figure:nth-child(3) {
+  animation-delay: 10s;
+  background-image: url('/Users/steve/2021/Work/011-SSSS-website/html/images/03-GS.jpg');
+}
+
+.crossfade > figure:nth-child(4) {
+  animation-delay: 15s;
+  background-image: url('/Users/steve/2021/Work/011-SSSS-website/html/images/02-GS.jpg');
+}
+
+.crossfade > figure:nth-child(5) {
+  animation-delay: 20s;
+  background-image: url('/Users/steve/2021/Work/011-SSSS-website/html/images/03-GS.jpg');
+}
+
+
+/* Animate the slideshow */
+@keyframes 
+imageAnimation {  0% {
+  animation-timing-function: ease-in;
+  opacity: 0;
+}
+  8% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  17% {
+    opacity: 1
+  }
+  25% {
+    opacity: 0
+  }
+  100% {
+    opacity: 0
+  }
+}
