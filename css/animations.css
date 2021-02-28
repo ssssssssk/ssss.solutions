@@ -76,6 +76,6 @@
        }
      }
 .custom {
-  cursor: url(/Users/steve/2021/011-SSSS-website/html/images/cat.png), auto;
+  cursor: url(~/images/cat.png), auto;
 }
  
