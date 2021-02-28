@@ -76,6 +76,6 @@
        }
      }
 .custom {
-  cursor: url(~/images/cat.png), auto;
+  cursor: url(../images/cat.png), auto;
 }
  
